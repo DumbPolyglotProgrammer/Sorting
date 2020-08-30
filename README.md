@@ -1,2 +1,7 @@
-# Sorting
-[TYPESCRIPT]
+### How to run?
+
+```
+npm i && npm start
+```
+
+Enjoy.

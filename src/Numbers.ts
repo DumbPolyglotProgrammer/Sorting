@@ -1,0 +1,23 @@
+import Sorter from './Sorter';
+
+class Numbers extends Sorter {
+
+    constructor(public data: number[]) {
+        super();
+    }
+
+    length = this.data.length;
+
+    compare(leftIndex: number, rightIndex: number): boolean {
+        return this.data[leftIndex] > this.data[rightIndex];
+    }
+
+    swap(leftIndex: number, rightIndex: number): void {
+        const temp = this.data[leftIndex];
+        this.data[leftIndex] = this.data[rightIndex];
+        this.data[rightIndex] = temp;
+    }
+
+}
+
+export default Numbers;
